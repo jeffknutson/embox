@@ -6,9 +6,7 @@ namespace embox
   {
     public WeatherForecast()
     {
-
-      var seed = DateTime.Now.Ticks;
-      Pancakes = new Random(Convert.ToInt32(seed)).Next();
+      Pancakes = new Random().Next();
     }
 
     public DateTime Date { get; set; }
